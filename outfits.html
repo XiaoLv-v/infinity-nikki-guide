@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服装图鉴 - 无限暖暖攻略站</title>
+    <meta name="description" content="无限暖暖全服装图鉴，包含获取方式、属性详解与搭配推荐。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ 无限暖暖攻略站</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" id="menuToggle">☰</button>
+                <ul id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="whimstars.html">奇想星位置</a></li>
+                    <li><a href="outfits.html" class="active">服装图鉴</a></li>
+                    <li><a href="challenges.html">穿搭挑战</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>👗 全服装图鉴</h1>
+                <p class="page-description">收录全部套装与单品，帮你规划收集路线</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-type="all">全部</button>
+                    <button class="filter-btn" data-type="limited">限时</button>
+                    <button class="filter-btn" data-type="permanent">常驻</button>
+                    <button class="filter-btn" data-type="crafting">制作</button>
+                </div>
+
+                <div class="outfits-grid" id="outfitsGrid">
+                    <!-- 由JS动态渲染 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="ad-container">
+        <p style="text-align:center;padding:20px;color:#666;">—— 广告位 ——</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 无限暖暖攻略站 | Infinity Nikki Fan Site</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

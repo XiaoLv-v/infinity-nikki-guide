@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇想星位置大全 - 无限暖暖攻略站</title>
+    <meta name="description" content="无限暖暖全地图奇想星位置指南，包含愿望之乡、花愿镇所有奇想星坐标与收集路线。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ 无限暖暖攻略站</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" id="menuToggle">☰</button>
+                <ul id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="whimstars.html" class="active">奇想星位置</a></li>
+                    <li><a href="outfits.html">服装图鉴</a></li>
+                    <li><a href="challenges.html">穿搭挑战</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>⭐ 全地图奇想星位置大全</h1>
+                <p class="page-description">截止1.2版本，共收录 <strong>186</strong> 个奇想星坐标</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <!-- Filter -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-area="all">全部</button>
+                    <button class="filter-btn" data-area="wishfield">愿望之乡</button>
+                    <button class="filter-btn" data-area="floral">花愿镇</button>
+                    <button class="filter-btn" data-area="breezy">微风原野</button>
+                </div>
+
+                <!-- Checklist Progress -->
+                <div class="progress-bar">
+                    <div class="progress-label">
+                        <span>收集进度</span>
+                        <span id="progressPct">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <!-- Map Zones -->
+                <div class="zone-section" data-area="wishfield">
+                    <h2>🏰 愿望之乡</h2>
+                    <div class="zone-stats">共 62 个奇想星</div>
+                    <div class="items-grid" id="wishfieldItems">
+                    </div>
+                </div>
+
+                <div class="zone-section" data-area="floral">
+                    <h2>🌸 花愿镇</h2>
+                    <div class="zone-stats">共 48 个奇想星</div>
+                    <div class="items-grid" id="floralItems">
+                    </div>
+                </div>
+
+                <div class="zone-section" data-area="breezy">
+                    <h2>🌿 微风原野</h2>
+                    <div class="zone-stats">共 76 个奇想星</div>
+                    <div class="items-grid" id="breezyItems">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 预留广告位 -->
+    <div class="ad-container">
+        <p style="text-align:center;padding:20px;color:#666;">—— 广告位 ——</p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 无限暖暖攻略站 | Infinity Nikki Fan Site</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

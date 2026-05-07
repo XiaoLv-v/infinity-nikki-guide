@@ -347,7 +347,91 @@ a:hover { color: var(--accent); }
     font-size: 0.9em;
 }
 
-/* ===== Ad Container ===== */
+/* ===== Codes Page ===== */
+.code-list { display: flex; flex-direction: column; gap: 16px; }
+.code-item {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.code-item.active { border-color: rgba(74,222,128,0.2); }
+.code-item.expired { opacity: 0.5; }
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.code-value {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+}
+.code-status.active { color: var(--success); font-size: 0.85em; }
+.code-status.expired { color: #ef4444; font-size: 0.85em; }
+.code-body p { color: var(--text-dim); font-size: 0.9em; }
+.code-date { font-size: 0.8em; color: var(--text-dim); margin-top: 4px; }
+.copy-btn {
+    align-self: flex-end;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    background: var(--primary);
+    color: #000;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.copy-btn:hover { background: var(--accent); }
+
+/* ===== Beginner Guide ===== */
+.guide-article {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+.guide-article h2 { font-size: 1.3em; margin-bottom: 16px; color: var(--primary); }
+.guide-article p { color: var(--text-dim); line-height: 1.8; }
+.guide-article ul { padding-left: 20px; margin: 12px 0; }
+.guide-article ul li { color: var(--text-dim); margin-bottom: 8px; line-height: 1.6; }
+.todo-list { display: flex; flex-direction: column; gap: 8px; }
+.todo-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+}
+.todo-check { flex-shrink: 0; }
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+.resource-item {
+    text-align: center;
+    padding: 16px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+}
+.resource-icon { font-size: 2em; margin-bottom: 8px; }
+.resource-item h4 { font-size: 0.95em; margin-bottom: 4px; }
+.resource-item p { font-size: 0.8em; color: var(--text-dim); }
+.tip-card {
+    padding: 14px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.tip-card p { margin: 0; }
+.tip-detail { font-size: 0.88em; color: var(--text-dim); margin-top: 4px; }
 .ad-container {
     max-width: 728px;
     margin: 20px auto;

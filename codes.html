@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无限暖暖兑换码大全 - 无限暖暖攻略站</title>
+    <meta name="description" content="无限暖暖最新兑换码汇总，持续更新礼包码、时装兑换码。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ 无限暖暖攻略站</h1>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-btn" id="menuToggle">☰</button>
+                <ul id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="whimstars.html">奇想星</a></li>
+                    <li><a href="outfits.html">服装</a></li>
+                    <li><a href="codes.html" class="active">兑换码</a></li>
+                    <li><a href="beginner.html">新手攻略</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(232,160,255,0.05));">
+            <div class="container">
+                <h1>🎁 无限暖暖兑换码大全</h1>
+                <p class="page-description">持续更新最新礼包兑换码，过期码会标记已失效</p>
+                <div style="margin-top:16px;padding:12px;background:rgba(251,191,36,0.1);border-radius:8px;border-left:3px solid #fbbf24;display:inline-block;">
+                    💡 <strong>兑换方式：</strong>游戏内设置 → 兑换码 → 输入即可
+                </div>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <div class="code-list">
+                    <div class="code-item active">
+                        <div class="code-header">
+                            <span class="code-value">NIKKI2025GIFT</span>
+                            <span class="code-status active">✅ 有效</span>
+                        </div>
+                        <div class="code-body">
+                            <p>🎀 奖励：钻石×188 + 灵感露珠×5</p>
+                            <p class="code-date">更新于：2025-05-07</p>
+                        </div>
+                        <button class="copy-btn" onclick="copyCode('NIKKI2025GIFT')">📋 复制</button>
+                    </div>
+
+                    <div class="code-item active">
+                        <div class="code-header">
+                            <span class="code-value">INFINITYLOVE</span>
+                            <span class="code-status active">✅ 有效</span>
+                        </div>
+                        <div class="code-body">
+                            <p>🎀 奖励：限定头像框 + 金币×888</p>
+                            <p class="code-date">更新于：2025-05-06</p>
+                        </div>
+                        <button class="copy-btn" onclick="copyCode('INFINITYLOVE')">📋 复制</button>
+                    </div>
+
+                    <div class="code-item active">
+                        <div class="code-header">
+                            <span class="code-value">FAIRYTALE888</span>
+                            <span class="code-status active">✅ 有效</span>
+                        </div>
+                        <div class="code-body">
+                            <p>🎀 奖励：时装券×66 + 体力×120</p>
+                            <p class="code-date">更新于：2025-05-05</p>
+                        </div>
+                        <button class="copy-btn" onclick="copyCode('FAIRYTALE888')">📋 复制</button>
+                    </div>
+
+                    <div class="code-item active">
+                        <div class="code-header">
+                            <span class="code-value">NIKKISP2025</span>
+                            <span class="code-status active">✅ 有效</span>
+                        </div>
+                        <div class="code-body">
+                            <p>🎀 奖励：限定时装「春日序曲」(上衣)</p>
+                            <p class="code-date">更新于：2025-05-04</p>
+                        </div>
+                        <button class="copy-btn" onclick="copyCode('NIKKISP2025')">📋 复制</button>
+                    </div>
+
+                    <div class="code-item expired">
+                        <div class="code-header">
+                            <span class="code-value">WELCOME0520</span>
+                            <span class="code-status expired">❌ 已过期</span>
+                        </div>
+                        <div class="code-body">
+                            <p>🎀 奖励：钻石×50（过期时间：2025-04-30）</p>
+                            <p class="code-date">更新于：2025-04-01</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:40px;padding:20px;background:var(--bg-card);border-radius:12px;text-align:center;">
+                    <h3>🔔 第一时间获取新兑换码</h3>
+                    <p style="color:var(--text-dim);margin:8px 0;">有新兑换码会在这里更新，建议收藏本页</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 无限暖暖攻略站 | Infinity Nikki Fan Site</p>
+        </div>
+    </footer>
+
+    <script>
+    function copyCode(code) {
+        navigator.clipboard.writeText(code).then(() => {
+            const btn = event.target;
+            btn.textContent = '✅ 已复制';
+            setTimeout(() => btn.textContent = '📋 复制', 2000);
+        });
+    }
+    // Mobile menu
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+        document.getElementById('navMenu')?.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

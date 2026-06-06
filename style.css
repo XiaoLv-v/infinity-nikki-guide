@@ -562,6 +562,110 @@ a:hover { color: var(--accent); }
     position: absolute;
     left: 0;
     color: var(--primary);
+    color: var(--primary);
+}
+
+/* ===== Breadcrumb ===== */
+.breadcrumb {
+    background: rgba(255,255,255,0.02);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    padding: 10px 0;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+.breadcrumb a {
+    color: var(--primary-dim);
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.breadcrumb span {
+    color: var(--text);
+}
+
+/* ===== Guide Article (long-form content) ===== */
+.guide-article {
+    margin: 2rem 0;
+}
+
+.guide-article h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.guide-article h3 {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.guide-article p {
+    margin: 0.8rem 0;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.guide-article ul,
+.guide-article ol {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+}
+
+.guide-article li {
+    margin: 0.5rem 0;
+    line-height: 1.7;
+    color: var(--text-dim);
+}
+
+.guide-article strong {
+    color: var(--text);
+}
+
+.guide-article table {
+    margin: 1rem 0;
+}
+
+.guide-article .notice-box {
+    background: rgba(96, 165, 250, 0.1);
+    border-left: 4px solid #60a5fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* ===== Table improvements ===== */
+.collect-table caption {
+    padding: 0.8rem 0;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+/* ===== Page Hero improvements ===== */
+.page-hero {
+    text-align: center;
+    padding: 3rem 0 1.5rem;
+}
+
+.page-hero h1 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.8rem;
+}
+
+.page-hero .page-description {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {

@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>奇想星位置大全 - 无限暖暖攻略站</title>
-    <meta name="description" content="无限暖暖全地图奇想星位置指南，包含愿望之乡、花愿镇所有奇想星坐标与收集路线。">
+    <title>全地图奇想星位置大全 - 无限暖暖攻略站</title>
+    <meta name="description" content="无限暖暖全地图奇想星位置指南大全，包含愿望之乡、花愿镇、微风原野等所有区域的奇想星坐标与最佳收集路线。附带交互式清单可标记进度。">
+    <meta name="keywords" content="无限暖暖, 奇想星, 位置, 坐标, 收集, 愿望之乡, 花愿镇, 微风原野, 全收集">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8350493966733244" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "全地图奇想星位置大全",
+        "description": "无限暖暖全地图奇想星收集指南，含坐标与路线。",
+        "about": "无限暖暖奇想星收集"
+    }
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -17,13 +27,13 @@
             <nav class="main-nav">
                 <button class="mobile-menu-btn" id="menuToggle">☰</button>
                 <ul id="navMenu">
-                    <li><a href="index.html" >首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li><a href="whimstars.html" class="active">奇想星</a></li>
-                    <li><a href="dewdrops.html" >灵感露珠</a></li>
-                    <li><a href="materials.html" >材料</a></li>
-                    <li><a href="outfits.html" >服装</a></li>
-                    <li><a href="codes.html" >兑换码</a></li>
-                    <li><a href="beginner.html" >新手攻略</a></li>
+                    <li><a href="dewdrops.html">灵感露珠</a></li>
+                    <li><a href="materials.html">材料</a></li>
+                    <li><a href="outfits.html">服装</a></li>
+                    <li><a href="codes.html">兑换码</a></li>
+                    <li><a href="beginner.html">新手攻略</a></li>
                     <li><a href="about.html">关于</a></li>
                 </ul>
             </nav>
@@ -34,9 +44,15 @@
         <section class="page-hero">
             <div class="container">
                 <h1>⭐ 全地图奇想星位置大全</h1>
-                <p class="page-description">截止1.2版本，共收录 <strong>186</strong> 个奇想星坐标</p>
+                <p class="page-description">截止当前版本，全地图奇想星完整坐标指南与最佳收集路线规划。交互式清单帮助你实时追踪收集进度。</p>
             </div>
         </section>
+
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">首页</a> &gt; <span>奇想星位置</span>
+            </div>
+        </div>
 
         <section class="content-area">
             <div class="container">
@@ -63,35 +79,93 @@
                 <div class="zone-section" data-area="wishfield">
                     <h2>🏰 愿望之乡</h2>
                     <div class="zone-stats">共 62 个奇想星</div>
-                    <div class="items-grid" id="wishfieldItems">
-                    </div>
+                    <div class="items-grid" id="wishfieldItems"></div>
                 </div>
 
                 <div class="zone-section" data-area="floral">
                     <h2>🌸 花愿镇</h2>
                     <div class="zone-stats">共 48 个奇想星</div>
-                    <div class="items-grid" id="floralItems">
-                    </div>
+                    <div class="items-grid" id="floralItems"></div>
                 </div>
 
                 <div class="zone-section" data-area="breezy">
                     <h2>🌿 微风原野</h2>
                     <div class="zone-stats">共 76 个奇想星</div>
-                    <div class="items-grid" id="breezyItems">
-                    </div>
+                    <div class="items-grid" id="breezyItems"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 详细的攻略内容 -->
+        <section class="content-area" style="padding-top:0;">
+            <div class="container">
+                <div class="guide-article">
+                    <h2>⭐ 奇想星是什么？</h2>
+                    <p>奇想星（Whimstars）是无限暖暖中的核心收集物之一，散布在游戏世界的各个角落。收集奇想星可以解锁服装制作配方、提升探索等级、获得钻石奖励等。</p>
+
+                    <h2>🗺️ 各区域收集详解</h2>
+
+                    <h3>愿望之乡（62个）</h3>
+                    <p>作为游戏初始区域，愿望之乡的奇想星分布相对集中，适合新手优先集齐。</p>
+                    <p><strong>最佳收集路线：</strong></p>
+                    <ol>
+                        <li>从中央广场开始，绕广场一周可收集约10个</li>
+                        <li>向东北方向延伸至钟楼区域（约8个）</li>
+                        <li>南下至教堂/花园区域（约12个）</li>
+                        <li>向西至桥头/瞭望台（约10个）</li>
+                        <li>最后探索西南地洞区域（约8个）</li>
+                        <li>剩余散布在边缘位置（约14个）</li>
+                    </ol>
+                    <p><strong>💡 提示：</strong>部分奇想星需要完成特定任务或解锁能力后才能到达，建议优先推进主线以解锁全部能力。</p>
+
+                    <h3>花愿镇（48个）</h3>
+                    <p>花愿镇是游戏中期的主要场景，奇想星分布在镇内各处及周边区域。</p>
+                    <p><strong>收集要点：</strong></p>
+                    <ul>
+                        <li>镇内建筑屋顶和风车上是常见位置，需要跳跃技巧</li>
+                        <li>后山花田区域有大量奇想星，建议一次走完整条路线</li>
+                        <li>部分奇想星在树洞内，需要解锁净化能力后才能进入</li>
+                        <li>河岸边有一些隐藏位置，注意观察水面的闪光点</li>
+                    </ul>
+
+                    <h3>微风原野（76个）</h3>
+                    <p>微风原野是最大的开放区域，奇想星分布非常广泛，建议分多次收集。</p>
+                    <p><strong>分区收集建议：</strong></p>
+                    <ul>
+                        <li><strong>入口-山坡区域（约20个）</strong> — 最易收集，沿着主路走即可</li>
+                        <li><strong>湖边区域（约15个）</strong> — 绕湖一周，注意湖中小岛</li>
+                        <li><strong>遗迹区域（约18个）</strong> — 部分需要解谜，建议带好照相机</li>
+                        <li><strong>断桥-大树区域（约12个）</strong> — 高处位置多，需要耐心</li>
+                        <li><strong>瀑布-隐藏洞穴（约11个）</strong> — 最后探索，路线较复杂</li>
+                    </ul>
+
+                    <h2>🧭 高效收集技巧</h2>
+                    <ol>
+                        <li><strong>优先解锁全部能力</strong> — 净化、跳跃、飞行等能力能让你到达更多位置</li>
+                        <li><strong>利用传送点</strong> — 每个区域都有传送点，善用可大幅缩短跑图时间</li>
+                        <li><strong>注意提示音</strong> — 靠近奇想星时会有特殊的音效提示</li>
+                        <li><strong>使用觅踪能力</strong> — 解锁后可显示附近的收集物位置</li>
+                        <li><strong>分区域逐一清图</strong> — 不要东跑一个西跑一个，效率低下</li>
+                        <li><strong>标记已收集的</strong> — 使用本页的交互清单标记进度，避免重复跑路</li>
+                    </ol>
+
+                    <h2>🎁 收集奖励一览</h2>
+                    <p>收集奇想星达到一定数量后可以获得以下奖励：</p>
+                    <ul>
+                        <li>每收集10个 — 钻石×50 + 金币×1000</li>
+                        <li>每收集30个 — 共鸣水晶×1</li>
+                        <li>每收集50个 — 限定服装制作配方解锁</li>
+                        <li>全收集（当前版本186个） — 限定称号 + 大量钻石</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 预留广告位 -->
-    <div class="ad-container">
-        <p style="text-align:center;padding:20px;color:#666;">—— 广告位 ——</p>
-    </div>
-
     <footer class="site-footer">
         <div class="container">
-            <p>© 2025 无限暖暖攻略站 | Infinity Nikki Fan Site</p>
+            <p>© 2025-2026 无限暖暖攻略站 | Infinity Nikki Fan Site</p>
+            <p class="footer-note"><a href="privacy.html">隐私政策</a> | <a href="terms.html">服务条款</a> | <a href="about.html">关于我们</a></p>
         </div>
     </footer>
 
